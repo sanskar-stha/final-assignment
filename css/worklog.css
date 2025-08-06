@@ -1,0 +1,176 @@
+/* Worklog Section */
+.worklog-section {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px rgba(145, 166, 180, 0.1);
+    margin-bottom: 32px;
+}
+
+.worklog-header {
+    padding: 22px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.worklog-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #263238;
+    margin-bottom: 4px;
+}
+
+.worklog-date {
+    font-size: 14px;
+    color: #333333;
+}
+
+.timesheet-header {
+    padding: 14px 22px;
+    border-bottom: 1px solid #e6e6e6;
+    display: grid;
+    grid-template-columns: 314px 244px 340px 140px;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+}
+
+.timesheet-form {
+    padding: 16px 22px;
+}
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: 288px 200px 346px 158px;
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 16px;
+}
+
+.form-select, .form-textarea, .form-input {
+    padding: 8px 12px;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-select {
+    height: 34px;
+    background: white;
+}
+
+.form-textarea {
+    height: 58px;
+    resize: vertical;
+}
+
+.form-input {
+    width: 74px;
+    height: 34px;
+}
+
+.form-row.disabled {
+    opacity: 0.5;
+}
+
+.form-row.disabled .form-select,
+.form-row.disabled .form-textarea {
+    background: #f2f2f2;
+    color: #d2d2d2;
+}
+
+.time-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.control-btn {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #e6e6e6;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+}
+
+.control-btn.active {
+    background: rgba(41, 182, 246, 0.1);
+    color: #29B6F6;
+}
+
+.worklog-footer {
+    padding: 14px 22px;
+    border-top: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.worklog-foot {
+    padding: 14px 22px;
+    border-top: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.btn-draft {
+    background: white;
+    color: #999999;
+    border-color: #b3b3b3;
+}
+
+.btn-submit {
+    background: #2ecc71;
+    color: white;
+    border-color: #2ecc71;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-cancel {
+    background: white;
+    color: #f44336;
+    border-color: #f44336;
+}
+
+.total-duration {
+    text-align: right;
+}
+
+.total-label {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 4px;
+}
+
+.total-time {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+}

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    background-color: #f4f7f9;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.floater{
+    position: fixed;
+    bottom: 0;
+    right: 20;
+    z-index: 999;
+}
+.container {
+    max-width: 1176px;
+    max-height: 492px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/* Cards Row */
+.cards-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    justify-content: center;
+    max-height: 492px;
+}
+
+.card {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(204, 197, 197, 0.25);
+}
+
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 24px;
+    font-size: 12px;
+    letter-spacing: 0.12px;
+    margin-bottom: 32px;
+}
+
+.change-color-purple{
+    fill: #AB22FF;
+
+}
+
+.footer-links a {
+    color: #29b6f6;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .cards-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .container {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 16px;
+    }
+    
+    .header-icons {
+        gap: 8px;
+    }
+    
+    .user-name {
+        display: none;
+    }
+    
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .table-header,
+    .team-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .timesheet-header,
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
