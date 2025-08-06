@@ -2,17 +2,18 @@
 .notice-card {
     width: 355px;
     overflow-y: auto;
+    background: radial-gradient(111.4% 111.43% at 111.17% 111.43%, #f5af00 6.69%, #c3cb2c 15.86%, #09a781 42.41%, #102b7b 87.64%);
+    box-shadow: 0 2px 2px #ccc5c540;
 }
 
 .notice-header {
     position: sticky;
     top: 0;
-    background: #2ECC71;
     padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1PX solid white;
+    border-bottom: 1px solid white;
 }
 
 .notice-title {
@@ -33,7 +34,6 @@
 .notice-content {
     padding: 20px;
     max-height: 492px;
-    background-color: #2ECC71;
 }
 
 .notice-item {

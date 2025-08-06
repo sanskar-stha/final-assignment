@@ -15,9 +15,10 @@ body {
 .floater{
     position: fixed;
     bottom: 0;
-    right: 20;
+    right: 20px;
     z-index: 999;
 }
+
 .container {
     max-width: 1176px;
     max-height: 492px;
@@ -31,6 +32,7 @@ body {
     gap: 24px;
     margin-bottom: 32px;
     justify-content: center;
+    
     max-height: 492px;
 }
 
